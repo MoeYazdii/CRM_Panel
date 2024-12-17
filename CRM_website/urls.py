@@ -5,4 +5,6 @@ urlpatterns = [
     #path('login/',views.login_user , name = 'login'), 
     path('logout/',views.logout_user , name = 'logout'),
     path('register',views.register_user, name='register'),       
+    path('record/<int:pk>', views.customer_record,name='record'),
+    #<int:pk>  int as a input and this int is a Primary Key
 ]
