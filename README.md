@@ -91,6 +91,9 @@ GRANT DELETE ON database_name.* TO 'username''@'localhost';
 GRANT DELETE ON database_name.table_name TO 'username'@'localhost';
 ```
 
+CRM panel look like this at the end:
+![Pasted image 20241217042041](https://github.com/user-attachments/assets/94ac363b-0bd6-46b0-888f-58a28501044d)
+
 **Show TABLES**
 USE <database_name>; 
 SHOW TABLES
