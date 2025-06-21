@@ -34,63 +34,6 @@ If the Django welcome page appears by going to the given address "127.0.0.1:8000
 
 ===============================================================
 
-
-mysql section:
-
-`CREATE DATABASE <database_name>;`
-
-## How to Create New MySQL User
-
-```
-sudo mysql -u root -p
-CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
-```
-## How to Grant Permissions in MySQL
-
-**All databases**
-
-```
-GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost';
-```
-
-**All tables in a specific database**
-
-```
-GRANT ALL PRIVILEGES ON database_name.* TO 'username''@'localhost';
-```
-
-**Specific table**
-
-```
-GRANT ALL PRIVILEGES ON database_name.table_name TO 'username'@'localhost';
-```
-
- Verify that the user has been granted the new privileges:
-
-```
-SHOW GRANTS FOR 'username'@'localhost';
-```
-
-### Grant Delete Privileges
-
-**All databases**
-
-```
-GRANT DELETE ON *.* TO 'username'@'localhost';
-```
-
-**All tables in a specific database**
-
-```
-GRANT DELETE ON database_name.* TO 'username''@'localhost';
-```
-
-**Specific table**
-
-```
-GRANT DELETE ON database_name.table_name TO 'username'@'localhost';
-```
-
 CRM panel look like this at the end:
 ![Pasted image 20241217042041](https://github.com/user-attachments/assets/94ac363b-0bd6-46b0-888f-58a28501044d)
 
